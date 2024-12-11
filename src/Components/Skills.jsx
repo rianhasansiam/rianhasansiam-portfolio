@@ -37,7 +37,7 @@ const Skills = () => {
 
 
   return (
-    <div id='skills' className='container mx-auto flex flex-col lg:flex-row items-center gap-10 py-20'>
+    <div id='skills' className='container mx-auto flex flex-col lg:flex-row items-center gap-10 py-20 overflow-hidden'>
     
     <div data-aos="fade-right" className=' w-[95%]  md:w-[80%]'>
         <h1 className='text-5xl py-5 font-bold'>SKILLS</h1>

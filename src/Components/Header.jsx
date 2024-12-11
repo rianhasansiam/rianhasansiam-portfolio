@@ -14,7 +14,7 @@ const Header = () => {
     });
   }, []);
   return (
-    <div className=' bg-black bgImg bg-fixed py-32 md:py-52'>
+    <div className=' bg-black bgImg bg-fixed py-32 md:py-52 overflow-hidden'>
        
 
        <div className=' flex flex-col md:flex-row md:items-center gap-10  lg:pl-20  pl-5 container mx-auto'>

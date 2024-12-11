@@ -43,7 +43,7 @@ const Education = () => {
   ];
 
   return (
-    <div id='education' className="bg-gray-900 text-white py-12 px-4 sm:px-8  lg:px-52">
+    <div id='education' className="bg-gray-900 text-white py-12 px-4 sm:px-8  lg:px-52 overflow-hidden">
       <h2 className="text-5xl font-bold mb-8">Education</h2>
       <div className="relative border-l border-gray-600">
 

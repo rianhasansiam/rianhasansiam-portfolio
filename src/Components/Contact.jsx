@@ -40,7 +40,7 @@ import 'aos/dist/aos.css';
   return (
    
 
-    <div id='contact' className="flex items-center justify-center min-h-screen bg-gray-900 ">
+    <div id='contact' className="flex items-center justify-center min-h-screen bg-gray-900 overflow-hidden">
 
       <form data-aos="zoom-in-up" ref={form} onSubmit={sendEmail} className="bg-white shadow-lg rounded-lg p-8  w-[95%] md:w-[80%]  lg:w-[50%] ">
         <h2 className="text-5xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
