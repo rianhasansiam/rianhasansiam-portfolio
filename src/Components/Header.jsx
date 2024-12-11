@@ -30,11 +30,17 @@ const Header = () => {
         <div data-aos="fade-up"
      data-aos-duration="3000" className=''> 
           <div className='text-white flex gap-8 text-3xl'>
-          <i className="fa-brands fa-github"></i>
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-telegram"></i>
+
+            <a target='_blank' href="https://github.com/rianhasansiam"><i className="fa-brands fa-github"></i></a>
+            <a target='_blank' href="https://www.facebook.com/rianhasan1971"><i className="fa-brands fa-facebook"></i></a>
+            <a target='_blank' href="https://www.linkedin.com/in/rian-hasan-siam/"><i className="fa-brands fa-linkedin"></i></a>
+            <a target='_blank' href="https://www.instagram.com/rian_hasan_siam/"><i className="fa-brands fa-instagram"></i></a>
+            <a target='_blank' href="https://t.me/rianhasansiam"><i className="fa-brands fa-telegram"></i></a>
+         
+       
+       
+       
+         
           
           </div>
 
