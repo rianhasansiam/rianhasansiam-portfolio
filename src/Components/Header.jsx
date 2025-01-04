@@ -1,12 +1,31 @@
 import  { useEffect } from 'react'
-import rian from '../assets/IMG_20231007_230509646_processed.jpg'
+import rian from '../assets/rianface.jpg'
 import photoframe from "./animation/newphotoframe.json";
 import Lottie from 'lottie-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import { jsPDF } from 'jspdf';
+// import pdf from '../../public/Rian_Hasan_Siam.pdf'
 
 
 const Header = () => {
+
+
+    const handleDownload = () => {
+      const url = 'Rian_Hasan_Siam.pdf'; // File URL
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'RianHasanSiam.pdf'); // Use 'download' attribute to force download
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    };
+
+
+
+
+
+
   useEffect(() => {
     AOS.init({
       duration: 1500, // Animation duration in milliseconds
@@ -47,6 +66,7 @@ const Header = () => {
           <div className='my-8'>
             <h1 className='font-extrabold text-5xl md:text-6xl lg:text-7xl'>Rian Hasan Siam</h1>
             <p className='text-3xl md:text-4xl font-semibold'>Full Stack Devoloper</p>
+            <button onClick={handleDownload} className='btn   font-semibold my-6 '>Resume <img className='w-5 h-5' src="https://img.icons8.com/?size=100&id=VGQlJM067vkN&format=png&color=000000" alt="" /></button>
           </div>
         </div>
        </div>

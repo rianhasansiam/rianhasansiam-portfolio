@@ -26,9 +26,9 @@ const Skills = () => {
     { skillName: "Illustrator", skillImage: "https://img.icons8.com/?size=100&id=13631&format=png&color=000000" },
     { skillName: "Figma", skillImage: "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" },
     { skillName: "Canva", skillImage: "https://img.icons8.com/?size=100&id=HGd2amAYhRGr&format=png&color=000000" },
-    { skillName: "ExpressJs", skillImage: "https://img.icons8.com/?size=100&id=2ZOaTclOqD4q&format=png&color=000000" },
+    // { skillName: "ExpressJs", skillImage: "https://img.icons8.com/?size=100&id=2ZOaTclOqD4q&format=png&color=000000" },
     { skillName: "MongoDB", skillImage: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" },
-    { skillName: "SQL", skillImage: "https://img.icons8.com/?size=100&id=qGUfLiYi1bRN&format=png&color=000000" }
+    // { skillName: "SQL", skillImage: "https://img.icons8.com/?size=100&id=qGUfLiYi1bRN&format=png&color=000000" }
   ]
   
   

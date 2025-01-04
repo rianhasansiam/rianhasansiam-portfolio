@@ -7,6 +7,7 @@ import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer'
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <Education/>
     <Projects/>
     <Contact/>
+    <Footer/>
     <ToastContainer />
 
    

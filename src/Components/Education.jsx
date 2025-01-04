@@ -22,24 +22,24 @@ const Education = () => {
       description: 'Daffodil International University',
       date: '2024 - Running',
     },
-    {
-      role: 'Full Stack Devoloper',
-      location: 'Website, Programming Hero',
-      description: ' Frontend and Backend Development have been completed by Programming Here.',
-      date: '2020 - 2022',
-    },
+    // {
+    //   role: 'Full Stack Devoloper',
+    //   location: 'Website, Programming Hero',
+    //   description: ' Frontend and Backend Development have been completed by Programming Here.',
+    //   date: '2020 - 2022',
+    // },
     {
       role: 'Higher Secondary Certificate',
       location: 'Mirpur, Dhaka',
       description: 'BCIC College',
       date: '2024 - 2024',
     },
-    {
-      role: 'Secondary School Certificate',
-      location: 'Mirpur, Dhaka',
-      description: 'BCIC Collge',
-      date: '2011 - 2021',
-    },
+    // {
+    //   role: 'Secondary School Certificate',
+    //   location: 'Mirpur, Dhaka',
+    //   description: 'BCIC Collge',
+    //   date: '2011 - 2021',
+    // },
   ];
 
   return (
