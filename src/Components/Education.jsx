@@ -18,8 +18,9 @@ const Education = () => {
   const timelineData = [
     {
       role: 'Software Engineering',
+      description:'currently pursuing a Bachelor of Science in Software Engineering at Daffodil International University in Savar, Dhaka. This program focuses on building skills in software development, programming languages, database management, and system design, preparing you for a career in technology and software engineering.',
       location: 'Savar, Dhaka',
-      description: 'Daffodil International University',
+      name: 'Daffodil International University',
       date: '2024 - Running',
     },
     // {
@@ -31,8 +32,9 @@ const Education = () => {
     {
       role: 'Higher Secondary Certificate',
       location: 'Mirpur, Dhaka',
-      description: 'BCIC College',
-      date: '2024 - 2024',
+      description:'I completed my Higher Secondary Certificate (HSC) from BCIC College in 2023. My studies during this period likely focused on preparing me for higher education, including my current pursuit of a Bachelors degree in Software Engineering.',
+      name: 'BCIC College',
+      date: '2021 - 2023',
     },
     // {
     //   role: 'Secondary School Certificate',
@@ -72,8 +74,10 @@ const Education = () => {
 
          
               <h3 className="text-lg font-semibold">{item.role}</h3>
-            <p className="text-sm text-gray-500 mb-1">{item.location}</p>
-            <p className="text-sm text-gray-500">{item.description}</p>
+              <h3 className='text-sm my-2 text-center'>{item.description}</h3>
+
+            <p className="text-sm text-gray-500 mb-1 text-right">{item.location}</p>
+            <p className="text-sm text-gray-500 text-right">{item.name}</p>
   </div>
               <span data-aos="fade-left" className="text-sm text-gray-300 max-sm:block max-sm:py-3">{item.date}</span>
 
