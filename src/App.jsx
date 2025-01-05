@@ -8,6 +8,7 @@ import Contact from './Components/Contact'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Components/Footer'
+import About from './Components/About'
 
 
 
@@ -23,7 +24,9 @@ function App() {
     <Skills/>
     <Education/>
     <Projects/>
+
     <Contact/>
+    <About/>
     <Footer/>
     <ToastContainer />
 
