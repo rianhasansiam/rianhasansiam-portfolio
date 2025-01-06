@@ -25,8 +25,8 @@ function App() {
     <Education/>
     <Projects/>
 
-    <Contact/>
     <About/>
+    <Contact/>
     <Footer/>
     <ToastContainer />
 

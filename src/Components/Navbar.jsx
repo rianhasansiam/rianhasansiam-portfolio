@@ -31,8 +31,8 @@ const Navbar = () => {
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     {/* <p className="btn btn-ghost lg:block hidden  text-xl"><img className="w-[50px] h-[50px] rounded-full" src="/public/Rian1.png" alt="" /></p> */}
@@ -43,8 +43,8 @@ const Navbar = () => {
     <li><a href="#skills">Skills</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 
