@@ -32,7 +32,7 @@ const projectData = [
     aos: 'flip-left',
     gradient: 'bg-gradient-to-r from-purple-500 to-pink-500',
     technology:'TailwindCss, JavaScript, React.js, Node.js, Firebase, MongoDB ',
-    github:'https://github.com/rianhasansiam/assignment-11-client'
+    github:'https://github.com/rianhasansiam/Hotel_COZYSTAY_Client_Side'
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const projectData = [
     aos: 'flip-left',
     gradient: 'bg-gradient-to-r from-purple-500 to-pink-500',
      technology:'TailwindCss, JavaScript, React.js, Node.js, Firebase, MongoDB ',
-     github:'https://github.com/rianhasansiam/assignment_10-client'
+     github:'https://github.com/rianhasansiam/Visa_Navigator'
   },
   {
     id: 4,
