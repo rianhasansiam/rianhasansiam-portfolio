@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import mock5 from '../assets/scholarshiHUb.png';
 import mock1 from '../assets/assignment11.png';
 import mock2 from '../assets/visanavigator.png';
 import mock3 from '../assets/LinggoBingo.png';
@@ -11,47 +12,59 @@ import mock4 from '../assets/gugedt.png';
 const projectData = [
   {
     id: 1,
+    image: mock5,
+    title: 'Scholarship Management System',
+    description:
+      'The Scholarship Management System is a web application designed to help students search and apply for scholarships based on their academic and personal background. It provides a platform where students can find suitable scholarships, apply for them, and track their application status.',
+    link: 'https://assignment-12-b3c0e.web.app',
+    aos: 'flip-left',
+    gradient: 'bg-gradient-to-r from-blue-500 to-green-500',
+    technology:'React, Tailwind CSS, Express.js, MongoDB, JWT, Recharts, Axios, Firebase, Node.j',
+    github:'https://github.com/rianhasansiam/ScholarShip_Hub?tab=readme-ov-file'
+  },
+  {
+    id: 2,
     image: mock1,
     title: 'COZYSTAY Hotel',
     description:
       'The website you provided, titled "Cozystay," appears to be a hotel booking platform or service. It showcases features like room listings, descriptions, pricing, and possibly options to book accommodations. The layout is user-friendly, with a focus on simplicity and ease of navigation, likely making it suitable for users looking for travel accommodations.',
-    link: 'https://assignment-11-118f4.web.app/',
+    link: 'https://cozystay-hotel-booking.web.app/',
     aos: 'flip-left',
     gradient: 'bg-gradient-to-r from-purple-500 to-pink-500',
     technology:'TailwindCss, JavaScript, React.js, Node.js, Firebase, MongoDB ',
     github:'https://github.com/rianhasansiam/assignment-11-client'
   },
   {
-    id: 2,
+    id: 3,
     image: mock2,
     title: 'Visa Navigator',
     description:
       'The website "Visa Navigator" seems to be a platform designed to help users navigate visa application processes. It likely provides tools for users to check visa requirements, apply online, and track their applications. The interface is straightforward and appears optimized for simplicity, focusing on delivering a smooth user experience for people dealing with visa applications.',
-    link: 'https://assignment-10-56bb8.web.app/',
+    link: 'https://assignment-10-56bb8.web.app',
     aos: 'flip-left',
     gradient: 'bg-gradient-to-r from-purple-500 to-pink-500',
      technology:'TailwindCss, JavaScript, React.js, Node.js, Firebase, MongoDB ',
      github:'https://github.com/rianhasansiam/assignment_10-client'
   },
   {
-    id: 3,
+    id: 4,
     image: mock3,
     title: 'Linggo Bingo',
     description:
       ' It likely provides tools or resources to help users learn and practice Spanish words. It might include features like vocabulary lists, quizzes, games, or learning modules designed to improve language skills. The website could focus on making language learning engaging through interactive content, especially for beginners or those looking to expand their vocabulary.',
-    link: 'https://lingobingo-assignment-09.surge.sh/',
+    link: 'https://lingobingo-assignment-09.surge.sh',
     aos: 'flip-right',
     gradient: 'bg-gradient-to-r from-pink-300 to-pink-100',
      technology:'TailwindCss, JavaScript, React.js, Firebase',
      github:'https://github.com/rianhasansiam/assignment_09'
   },
   {
-    id: 4,
+    id: 5,
     image: mock4,
     title: 'Gadget Haven',
     description:
       'It focuses on gadgets or electronic products. The site may feature a collection of gadget-related content, such as reviews, product details, or possibly a platform to sell or buy gadgets. It might also include visuals and information about the latest tech trends, gadgets, and devices available for purchase.',
-    link: 'https://gadget-assignment_08.surge.sh/',
+    link: 'https://gadget-assignment_08.surge.sh',
     aos: 'flip-left',
     gradient: 'bg-gradient-to-r from-blue-500 to-green-500',
      technology:'TailwindCss, JavaScript, React.js, Firebase',
