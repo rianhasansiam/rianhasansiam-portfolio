@@ -12,10 +12,10 @@ const Header = () => {
 
 
     const handleDownload = () => {
-      const url = 'Rian_Hasan_Siam.pdf'; // File URL
+      const url = 'Rian_Resume.pdf'; // File URL
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'RianHasanSiam.pdf'); // Use 'download' attribute to force download
+      link.setAttribute('download', 'Rian_Resume.pdf'); // Use 'download' attribute to force download
       document.body.appendChild(link);
       link.click();
       link.remove();
