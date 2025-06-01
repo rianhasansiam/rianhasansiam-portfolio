@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
- const Contact = () => {
+ const Contact = ({ userLocation }) => {
 
   useEffect(() => {
     AOS.init({
@@ -15,22 +15,37 @@ import 'aos/dist/aos.css';
 
 
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Get form data
+    const formData = new FormData(form.current);
+    
+    // Add location data to the form data if available
+    const templateParams = {
+      from_name: formData.get('from_name'),
+      user_email: formData.get('user_email'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
+      user_latitude: userLocation ? userLocation.latitude : 'Not available',
+      user_longitude: userLocation ? userLocation.longitude : 'Not available',
+      location_info: userLocation ? 
+        `User Location - Latitude: ${userLocation.latitude}, Longitude: ${userLocation.longitude}` : 
+        'Location not available'
+    };
+
     emailjs
-      .sendForm('service_yrlxuma', 'template_0217uod', form.current, {
+      .send('service_yrlxuma', 'template_0217uod', templateParams, {
         publicKey: 'TLs9u-trXhMYUsnMT',
       })
       .then(
         () => {
-            toast.success("Massage Send Success..!", {
+            toast.success("Message Sent Successfully..!", {
                 position: "top-center"
               });
         },
         (error) => {
-            toast.success(error,"Massage Can't send", {
+            toast.error("Message Can't be sent", {
                 position: "top-center"
               });
         },
