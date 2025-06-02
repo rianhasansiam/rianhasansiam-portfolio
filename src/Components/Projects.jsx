@@ -7,9 +7,22 @@ import mock1 from '../assets/assignment11.png';
 import mock2 from '../assets/visanavigator.png';
 import mock3 from '../assets/LinggoBingo.png';
 import mock4 from '../assets/gugedt.png';
-// import mock5 from '../assets/ebpl.png';
+import mock6 from '../assets/sahaba-store.png';
 
 const projectData = [
+  {
+    id: 6,
+    image: mock6,
+    title: 'Sahaba Store',
+    description:
+      'An e-commerce platform specializing in Islamic products, books, and accessories. The store offers a wide range of items for Muslims, with a user-friendly interface that makes browsing and purchasing simple and convenient.',
+    link: 'https://sahaba-store.shop',
+    aos: 'flip-right',
+    gradient: 'bg-gradient-to-r from-yellow-500 to-red-500',
+    technology: 'React, Tailwind CSS, Node.js, Express.js, MongoDB, Stripe Payment',
+    github: 'https://github.com/rianhasansiam/sahaba_store'
+  },
+  
   {
     id: 1,
     image: mock5,
@@ -70,16 +83,7 @@ const projectData = [
      technology:'TailwindCss, JavaScript, React.js, Firebase',
      github:'https://github.com/rianhasansiam/assignment_08'
   },
-  // {
-  //   id: 5,
-  //   image: mock5,
-  //   title: 'BPL Cricket',
-  //   description:
-  //     'A sports platform where users can buy and sell players. Built for cricket enthusiasts.',
-  //   link: 'https://bpl-xl_assignment_07.surge.sh/',
-  //   aos: 'flip-right',
-  //   gradient: 'bg-gradient-to-r from-yellow-500 to-red-500',
-  // },
+  
 ];
 
 function Projects() {
