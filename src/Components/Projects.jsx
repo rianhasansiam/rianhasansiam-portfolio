@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -85,37 +85,38 @@ const projectData = [
 function Projects() {
   useEffect(() => {
     AOS.init({
-      duration: 1500, // Animation duration in milliseconds
+      duration: 1000, // Animation duration in milliseconds
       once: false, // Whether animation should happen only once
+      easing: 'ease-in-out-cubic',
     });
   }, []);
-
   return (
     <div id="projects" className="text-white py-12 px-4 sm:px-8 lg:px-52 overflow-hidden">
-      <h1 className="text-3xl font-bold mb-8">Personal Projects</h1>
+      <h1 data-aos="fade-down" className="text-3xl font-bold mb-8">Personal Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projectData.map((project) => (
+        {projectData.map((project, index) => (
           <div
             key={project.id}
             data-aos={project.aos}
-            className={`relative ${project.gradient} p-5 md:p-7 lg:p-14 rounded-lg`}
+            data-aos-delay={`${index * 200}`}
+            className={`relative ${project.gradient} p-5 md:p-7 lg:p-14 rounded-lg hover:scale-105 transition-transform duration-500 hover:shadow-2xl group`}
           >
             <a href={project.link} target="_blank" rel="noreferrer">
-              <img src={project.image} className="rounded-lg shadow-lg mb-4" alt={project.title} />
+              <img src={project.image} className="rounded-lg shadow-lg mb-4 group-hover:scale-105 transition-transform duration-300" alt={project.title} />
             </a>
             <a href={project.link} target="_blank" rel="noreferrer">
-              <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+              <h2 className="text-2xl font-bold mb-2 group-hover:text-yellow-200 transition-colors duration-300">{project.title}</h2>
             </a>
-            <p className="text-gray-200 text-sm">{project.description}</p>
+            <p className="text-gray-200 text-sm group-hover:text-gray-100 transition-colors duration-300">{project.description}</p>
 
-            <div className="text-black bg-white text-center p-3 shadow-md rounded-xl my-4 py-6">
+            <div className="text-black bg-white text-center p-3 shadow-md rounded-xl my-4 py-6 group-hover:bg-gray-100 transition-colors duration-300">
               <p className='font-semibold'>Technology</p>
 
             <p >{project.technology}</p>
             </div>
 
             <div
-              className='font-semibold'>Link: <a target="_blank" href={project.github} className='underline font-normal ml-2'>GitHub </a>  <a target="_blank" href={project.link} className='underline font-normal ml-2'> Live</a>
+              className='font-semibold'>Link: <a target="_blank" href={project.github} className='underline font-normal ml-2 hover:text-yellow-200 transition-colors duration-300'>GitHub </a>  <a target="_blank" href={project.link} className='underline font-normal ml-2 hover:text-yellow-200 transition-colors duration-300'> Live</a>
               
                </div>
           </div>

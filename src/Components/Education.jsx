@@ -6,11 +6,11 @@ import 'aos/dist/aos.css';
 
 
 
-const Education = () => {
-  useEffect(() => {
+const Education = () => {  useEffect(() => {
     AOS.init({
-      duration: 1500,
-      once:false
+      duration: 1200,
+      once: false,
+      easing: 'ease-in-out-cubic',
       // Animation duration in milliseconds
        // Whether animation should happen only once
     });
@@ -43,17 +43,16 @@ const Education = () => {
     //   date: '2011 - 2021',
     // },
   ];
-
   return (
     <div id='education' className="bg-gray-900 text-white py-12 px-4 sm:px-8  lg:px-52 overflow-hidden">
-      <h2 className="text-5xl font-bold mb-8">Education</h2>
+      <h2 data-aos="fade-down" className="text-5xl font-bold mb-8">Education</h2>
       <div className="relative border-l border-gray-600">
 
 
 
         {timelineData.map((item, index) => (
           <div key={index} className="mb-5 ml-10 md:flex justify-between">
-            <span className="flex items-center justify-center w-8 h-8 bg-purple-600 rounded-full absolute -left-4 mt-3  ring-8 ring-gray-900">
+            <span data-aos="zoom-in" data-aos-delay={`${index * 300}`} className="flex items-center justify-center w-8 h-8 bg-purple-600 rounded-full absolute -left-4 mt-3  ring-8 ring-gray-900 hover:bg-purple-700 transition-colors duration-300">
               <svg
                 className="w-4 h-4 text-white"
                 fill="currentColor"
@@ -68,7 +67,7 @@ const Education = () => {
               </svg>
             </span>
 
-  <div data-aos="fade-left" className='bg-white text-black md:w-[70%] lg:w-[45%] p-5  relative'>
+  <div data-aos="fade-left" data-aos-delay={`${index * 400}`} className='bg-white text-black md:w-[70%] lg:w-[45%] p-5  relative hover:bg-gray-50 hover:scale-105 transition-all duration-300 hover:shadow-xl'>
 
     <span className='h-[20px] w-[30px] bg-white block absolute -left-3 top-7 rotate-45'></span>
 
